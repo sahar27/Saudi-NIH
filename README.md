@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/shr27/saudi-nih/assets/images/blob/main/wave-haikei-3.svg" width=100%/>
+<img src="https://github.com/sahar27/Saudi-NIH/blob/main/assets/images/top.svg" width=100%/>
 </p>
 
  <samp>
@@ -21,7 +21,7 @@ _<h1 align=center> Innovation System </h1>_
 
 ## Project
 
-<img align="left" src="https://github.com/shr27/saudi-nih/assets/images/blob/main/website-mockup.png" width="600px"> <p> <br/><br/><br/><br/><br/><br/><br/><br/> <h3 align="center" > [_Visit_](...)</h3> </p>
+<img align="left" src="https://github.com/sahar27/Saudi-NIH/blob/main/assets/images/website-mockup.png" width="600px"> <p> <br/><br/><br/><br/><br/><br/><br/><br/> <h3 align="center" > [_Visit_](...)</h3> </p>
 
  </samp>
  
@@ -33,10 +33,10 @@ _<h1 align=center> Innovation System </h1>_
 
 ## Figma
 
-<img align="left" src="https://github.com/shr27/saudi-nih/assets/images/blob/main/mediamodifier_image.png" width="600px"> <p> <br/><br/><br/><br/><br/><br/><br/><br/> <h3 align="center" > [_Visit_](https://www.figma.com/file/3QNfSrH0LY8v9Qluobe7yP/Saudi-NIH?node-id=8%3A7016)</h3> </p>
+<img align="left" src="https://github.com/sahar27/Saudi-NIH/blob/main/assets/images/figma-mockup.png" width="600px"> <p> <br/><br/><br/><br/><br/><br/><br/><br/> <h3 align="center" > [_Visit_](https://www.figma.com/file/3QNfSrH0LY8v9Qluobe7yP/Saudi-NIH?node-id=8%3A7016)</h3> </p>
 
  </samp>
 
 <p align="center">
-<img src="https://github.com/shr27/saudi-nih/assets/images/blob/main/wave-haikei-2.svg" width=100%/>
+<img src="https://github.com/sahar27/Saudi-NIH/blob/main/assets/images/bottom.svg" width=100%/>
 </p>
