@@ -1,0 +1,127 @@
+<div *ngIf="isList">
+    <div
+        class="text-900 font-semibold text-lg mt-5 mb-3 border-bottom-1 surface-border py-3"
+    >
+        {{ title }}
+    </div>
+    <ul class="list-none p-0 m-0">
+        <li
+            *ngFor="let task of applicationList"
+            class="flex flex-column gap-3 md:flex-row md:align-items-center p-2 border-bottom-1 surface-border"
+            id="app-{{ task.id }}"
+            [ngClass]="{ active: task.id == 2 && isFirstVisit }"
+        >
+            <div class="flex align-items-center flex-1" (click)="open(task)">
+                <p-checkbox
+                    [binary]="true"
+                    (onChange)="onCheckboxChange($event, task)"
+                    [(ngModel)]="task.completed"
+                    [inputId]="task.id.toString()"
+                ></p-checkbox>
+                <label
+                    for="task.id"
+                    class="font-medium white-space-nowrap ml-2"
+                    >{{ task.name }}</label
+                >
+            </div>
+            <div
+                class="flex flex-2 gap-3 flex-column sm:flex-row sm:justify-content-between"
+            >
+                <div class="flex align-items-center">
+                    <span
+                        style="color: gray; font-size: 11px"
+                        class="flex align-items-center font-semibold white-space-nowrap"
+                        *ngIf="task.startDate"
+                        ><i class="pi pi-calendar mr-2"></i
+                        >{{ task.startDate | date }}</span
+                    >
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="!isList" class="p-4">
+    <h3 id="app-name">{{ currentApp.name }}</h3>
+    <div class="grid p-3">
+        <div class="col-6">
+            <div class="pb-3">Applicant</div>
+            <div class="flex justify-content-first align-items-center">
+                <div>
+                    <p-avatar
+                        image="assets/images/avatar-m-1.png"
+                        styleClass="mr-2"
+                        shape="circle"
+                    ></p-avatar>
+                </div>
+                <div class="font-bold">John Doe</div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div>Category</div>
+            <div id="app-category" class="font-bold" style="margin-top: 20px">
+                {{ currentApp.category }}
+            </div>
+        </div>
+    </div>
+
+    <h5>Description</h5>
+    <p id="app-description" style="text-align: justify">
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ea ullam
+        rem ipsa quo maiores quisquam ipsum, neque velit incidunt laudantium
+        libero excepturi assumenda, fuga eligendi exercitationem? Accusamus,
+        obcaecati tempora porro pariatur.
+        <br />
+        <br />
+        temporibus. Necessitatibus delectus quibusdam inventore ipsam explicabo
+        possimus voluptas aspernatur iusto, dolore alias doloremque assumenda,
+        reprehenderit accusamus aliquam qui illo iure laboriosam unde autem,
+        totam aliquid soluta molestias!
+        <br />
+        <br />
+        <span
+            style="
+                display: inline-block;
+                width: 180px;
+                text-align: justify;
+                text-justify: auto;
+                margin-right: 20px;
+            "
+        >
+            possimus volutas patur iusto, dolre alias demque aenda,
+            reprehehgfhfndit accusamus aliquam qui illo iure laborosam unde
+            auem, totam alqid soluta molestias! Lorem ipsum Lorem ipsum dolor
+            sit amet consectetur ipsum Lorem ipsum dolor sit ipsum dolor
+            sit.</span
+        >
+
+        <img
+            src="assets/images/app-img.png"
+            alt=""
+            width="330px"
+            height="220px"
+        />
+        <br />
+        <br />
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat
+        laboriosam in impedit autem animi culpa explicabo voluptatibus tenetur,
+        harum, laborum eius. Perferendis porro ullam magni, natus quasi libero
+        alias aliquid?
+    </p>
+
+    <hr />
+
+    <div class="flex btns-container justify-content-center">
+        <div>
+            <button class="approve-btn">
+                <i class="pi pi-check mr-2" style="font-size: 1rem"></i> APPROVE
+            </button>
+        </div>
+
+        <div>
+            <button class="reject-btn">
+                <i class="pi pi-times mr-2" style="font-size: 1rem"></i> REJECT
+            </button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+.selected,
+.active {
+    background-color: #c6cdd4;
+}
+
+.btns-container button {
+    /* border-style: none; */
+    padding: 10px 60px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: 0.7s ease;
+
+}
+
+.approve-btn {
+    background-color: #006289;
+    color: white;
+    border-style: none;
+}
+
+.reject-btn {
+    border: 1px solid #b33914;
+    color: #b33914;
+    background-color: transparent;
+}
+
+.btns-container button:hover {
+    cursor: pointer;
+    transform: scale(1.05) perspective(0.7px);
+}

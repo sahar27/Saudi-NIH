@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="flex app-list-container justify-content-start">
+        <div
+            class="card"
+            style="width: 40%; display: inline-block; margin-right: 30px"
+        >
+            <div class="flex justify-content-between align-items-center mb-5">
+                <span class="text-900 text-xl font-semibold">Application List</span>
+            </div>
+            <app-app-list [applicationList]="todo" title="To Review"></app-app-list>
+            <app-app-list
+                [applicationList]="completed"
+                title="Completed"
+            ></app-app-list>
+        </div>
+        <div class="card" style="width: 55%; display: inline-block">
+            <app-app-list [applicationList]="todo" [isList]="false"></app-app-list>
+        </div>
+    </div>
+</div>
